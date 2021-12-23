@@ -1,0 +1,104 @@
+:root{
+    --blanco: #fff;
+    --black: #000;
+    --primario: #dfec66;
+    --secundario: #4662ad;
+    --gris: #c6dfe786;
+    --fuente-principal: 3.8rem;
+}
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    background-image: linear-gradient(to top, var(--primario)  0%, var(--blanco) 100% );
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-repeat: no-repeat;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.titulo{
+    font-size: var(--fuente-principal);
+    text-align: center;
+    background-color: var(--secundario);
+    border-radius: .5rem;
+    color: yellowgreen;
+    font-weight: 500;
+    padding: 2rem;
+}
+
+.nav-bg{
+    background-color: yellowgreen;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.menu-principal{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media (min-width: 768px){
+    .menu-principal{
+        flex-direction: row;
+        justify-content: space-between;   
+    }
+}
+
+.menu-principal a {
+    display: block;
+    text-align: center;
+    color: var(--secundario);
+    text-decoration: white;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.menu-principal a:hover{
+    background-color: var(--gris);
+    border-radius: .5rem;
+}
+.reloj-digital{
+    background-color: var(--secundario);
+    border-radius: .5rem;
+    text-align: center;
+    color: var(--blanco);
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 30%;
+}
+.botonera{
+text-align: center;
+    
+}
+.boton
+{
+    background-color: yellowgreen;
+    color: var(--secundario);
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+
+}
+@media (min-width: 768px){
+    .boton{
+        width: auto;
+    }
+}
+
